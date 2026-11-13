@@ -3,8 +3,8 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-<title>Aquopolis 3D</title>
-<meta name="description" content="Aquopolis: the undersea city of Eco-Polis, explorable in 3D.">
+<title>Aquapolis 3D</title>
+<meta name="description" content="Aquapolis: The Abyssal Metropolis, an undersea city explorable in 3D.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@300;500;700&display=swap" rel="stylesheet">
 <style>
@@ -69,8 +69,8 @@
 
 <div class="hud brand">
   <div class="tag">DEPTH 00 / SEABED</div>
-  <h1>AQUOPOLIS</h1>
-  <p>The Undersea City of Eco-Polis</p>
+  <h1>AQUAPOLIS</h1>
+  <p>The Abyssal Metropolis</p>
 </div>
 
 <div class="hud credit">
@@ -90,7 +90,7 @@
 
 <div class="loader" id="loader">
   <div class="box">
-    <div class="title">AQUOPOLIS</div>
+    <div class="title">AQUAPOLIS</div>
     <div class="bar"><i id="bar"></i></div>
     <small id="status">INITIALIZING CITY…</small>
   </div>
@@ -179,7 +179,7 @@ bubbleGeo.setAttribute('position', new THREE.BufferAttribute(bubblePos, 3));
 const bubbles = new THREE.Points(bubbleGeo, new THREE.PointsMaterial({ color: 0xe8fbff, size: 0.35, transparent: true, opacity: 0.7, depthWrite: false }));
 scene.add(bubbles);
 
-// Glow around the Aquopolis Core
+// Glow around the Aquapolis Core
 const coreLight = new THREE.PointLight(0x00e5ff, 60, 40, 1.6);
 coreLight.position.set(-4, 14, -4);
 scene.add(coreLight);
